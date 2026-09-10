@@ -12,33 +12,12 @@ proxies:
   password: Y6R9pAtvxxzmGC
   udp: true
 - name: 🇩🇰 DK 02 - xiaohe
-  type: vless
-  server: cf10.466688.xyz
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  type: ss
+  server: 38.180.214.110
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia12.pages.dev
-  network: ws
-  ws-opts:
-    path: /go.php?ed=2560@https://t.me/QiangLieTuiJian
-    headers:
-      Host: mia12.pages.dev
-- name: 🇩🇰 DK 03 - xiaohe
-  type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇩🇰 DK 01 - xiaohe
   - 🇩🇰 DK 02 - xiaohe
-  - 🇩🇰 DK 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇩🇰 DK 01 - xiaohe
   - 🇩🇰 DK 02 - xiaohe
-  - 🇩🇰 DK 03 - xiaohe
 rules:
 - MATCH,PROXIES
