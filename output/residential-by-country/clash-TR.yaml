@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
   type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  server: chat.openai.com
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: vms.lifetime29.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
