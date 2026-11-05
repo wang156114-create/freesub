@@ -6,26 +6,19 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: 172.64.155.209
   port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  uuid: 64726966-0000-4000-8000-740000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /drift
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: ss
-  server: 46.17.46.27
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
   server: 87.120.166.160
   port: 443
@@ -46,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
