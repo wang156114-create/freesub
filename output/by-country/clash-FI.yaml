@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 172.64.79.163
+  server: 104.17.145.145
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -15,7 +15,7 @@ proxies:
   servername: vipfree.dr-ping.ir
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
       Host: vipfree.dr-ping.ir
 proxy-groups:
